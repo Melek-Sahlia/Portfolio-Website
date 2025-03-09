@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malek Sahlia - AI Research Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">Malek Sahlia</div>
+        <ul class="nav-links">
+            <li><a href="#home" data-i18n="nav.home">Home</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#activities" data-i18n="nav.activities">Activities</a></li>
+            <li><a href="#achievements" data-i18n="nav.achievements">Achievements</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="images/profile-placeholder.jpg" alt="Malek Sahlia">
+            </div>
+            <h1>Malek Sahlia</h1>
+            <p class="tagline" data-i18n="hero.tagline">AI Research Engineer, Data Science Competitor | Python, Statistics, Analysis</p>
+            <div class="intro-text">
+                <p data-i18n="hero.intro">Hi, I'm Malek Sahlia, an AI Research Engineer and passionate tutor with over 6 years of experience in building intelligent systems. I specialize in developing predictive models, scalable data pipelines, and machine learning solutions that drive real-world impact. From optimizing healthcare outcomes to solving complex data problems, I focus on innovation and delivering measurable results.</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Melek-Sahlia" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/melek-sahlia/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:malek.sahlia.ai@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://zindi.africa/users/HackP" target="_blank" class="zindi">Zindi</a>
+            </div>
+            <div class="contact-brief">
+                <p><i class="fas fa-phone"></i> (+216) 24170579</p>
+                <p><i class="fas fa-map-marker-alt"></i> Manouba, Tunisia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Download -->
+    <div class="resume-download">
+        <h3>Download Resume</h3>
+        <div class="resume-buttons">
+            <a href="PDFs/Malek Sahlia CV.pdf" class="resume-btn" download>
+                <i class="fas fa-download"></i> English Version
+            </a>
+            <a href="PDFs/Malek Sahlia CV FR.pdf" class="resume-btn" download>
+                <i class="fas fa-download"></i> Version Française
+            </a>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2 data-i18n="experience.title">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Data and Machine Learning Engineer</h3>
+                    <h4>Knowlepsy</h4>
+                    <p class="date">DEC 2023 — Present | Tunisia, Remote</p>
+                    <ul class="achievements-list">
+                        <li>Developed and deployed models for various health metrics, improving performance by 23%</li>
+                        <li>Built automated interactive dashboard using Dash and PostgreSQL, reducing manual reporting by 30%</li>
+                        <li>Created scalable ETL pipelines using Azure with 10,000 records/sec throughput and 96% availability</li>
+                        <li>Contributed to AI projects in time series (wearables), LLMs (chat interactions), and computer vision</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Data Science Research Assistant</h3>
+                    <h4>Institute of Intelligence and Data (IID)</h4>
+                    <p class="date">MAR 2023 — AUG 2023 | Canada, Hybrid</p>
+                    <ul class="achievements-list">
+                        <li>Conducted systematic review of 1,200 articles on AI biases in healthcare</li>
+                        <li>Optimized patient admission management by 12% using predictive modeling</li>
+                        <li>Presented findings and authored implementation report for production deployment</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Data Science Intern</h3>
+                    <h4>AxeFinance</h4>
+                    <p class="date">JUL 2022 — AUG 2022 | Tunisia, On-Site</p>
+                    <ul class="achievements-list">
+                        <li>Automated data extraction from financial statements using Docker and OCR, reducing manual effort by 66%</li>
+                        <li>Implemented scalable pipeline for table detection and CSV conversion, improving speed by 28%</li>
+                        <li>Orchestrated services with Docker Compose for scalable financial data processing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 data-i18n="projects.title">Projects</h2>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all" data-i18n="projects.filters.all">All</button>
+            <button class="filter-btn" data-filter="mlops" data-i18n="projects.filters.mlops">MLOps</button>
+            <button class="filter-btn" data-filter="cv" data-i18n="projects.filters.cv">Computer Vision</button>
+            <button class="filter-btn" data-filter="nlp" data-i18n="projects.filters.nlp">NLP</button>
+            <button class="filter-btn" data-filter="ml" data-i18n="projects.filters.ml">Machine Learning</button>
+            <button class="filter-btn" data-filter="data-engineering" data-i18n="projects.filters.data">Data Engineering</button>
+        </div>
+        <div class="project-grid">
+            <!-- Early Seizure Detection MLOps -->
+            <div class="project-card" data-category="mlops">
+                <div class="project-image">
+                    <img src="images/seizure-detection.jpeg" alt="Early Seizure Detection">
+                </div>
+                <h4 data-i18n="projects.seizure.title">Early Seizure Detection MLOps</h4>
+                <p data-i18n="projects.seizure.description">Developed an automated MLOps pipeline for early seizure detection using XGBoost and ZenML, with SHAP for model interpretability.</p>
+                <div class="tech-stack">
+                    <span>ZenML</span>
+                    <span>XGBoost</span>
+                    <span>SHAP</span>
+                    <span>MLOps</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Melek-Sahlia/MLOps-for-Early-Seizure-Detection" target="_blank">GitHub</a>
+                    <span class="rank">AI Night Challenge 24</span>
+                </div>
+            </div>
+
+            <!-- Cryptojacking Detection -->
+            <div class="project-card" data-category="ml">
+                <div class="project-image">
+                    <img src="images/crypto.png" alt="Cryptojacking Detection">
+                </div>
+                <h4 data-i18n="projects.crypto.title">Cryptojacking Detection System</h4>
+                <p data-i18n="projects.crypto.description">Built a classification model to detect illegal cryptocurrency mining activities from website behavior patterns.</p>
+                <div class="tech-stack">
+                    <span>scikit-learn</span>
+                    <span>XGBoost</span>
+                    <span>Feature Engineering</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://zindi.africa/competitions/umojahack-africa-2023-intermediate-challenge" target="_blank">Competition</a>
+                </div>
+            </div>
+
+            <!-- ESG Project -->
+            <div class="project-card" data-category="nlp">
+                <div class="project-image">
+                    <img src="images/esg.png" alt="ESG Project">
+                </div>
+                <h4 data-i18n="projects.esg.title">ESG Indicators Extraction</h4>
+                <p data-i18n="projects.esg.description">Built a Retrieval-Augmented Generation (RAG) system for extracting ESG metrics from PDF reports.</p>
+                <div class="tech-stack">
+                    <span>RAG</span>
+                    <span>LangChain</span>
+                    <span>PyPDF</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://zindi.africa/competitions/unifi-value-frameworks-pdf-lifting-competition" target="_blank">Competition</a>
+                </div>
+            </div>
+
+            <!-- Olive Tree Mapping -->
+            <div class="project-card" data-category="cv">
+                <div class="project-image">
+                    <img src="images/olt.png" alt="Olive Tree Mapping">
+                </div>
+                <h4 data-i18n="projects.olive.title">Olive Tree Crop Mapping</h4>
+                <p data-i18n="projects.olive.description">Used Sentinel-2 TIF data and spatio-temporal models to map olive tree crops at the parcel level.</p>
+                <div class="tech-stack">
+                    <span>Sentinel-2</span>
+                    <span>PyTorch</span>
+                    <span>GIS</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://zindi.africa/competitions/opengeoai-2023-hack" target="_blank">Competition</a>
+                </div>
+            </div>
+
+            <!-- Location Recognition -->
+            <div class="project-card" data-category="nlp">
+                <div class="project-image">
+                    <img src="images/lmr.png" alt="Location Recognition">
+                </div>
+                <h4 data-i18n="projects.location.title">Location Mention Recognition</h4>
+                <p data-i18n="projects.location.description">Fine-tuned XLM-RoBERTa model for location mention recognition in emergency situations.</p>
+                <div class="tech-stack">
+                    <span>XLM-RoBERTa</span>
+                    <span>Transformers</span>
+                    <span>PyTorch</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://zindi.africa/competitions/geoai-challege-location-mention-recognition-from-social-media" target="_blank">Competition</a>
+                </div>
+            </div>
+
+            <!-- RMB Nowcast -->
+            <div class="project-card" data-category="forecasting">
+                <div class="project-image">
+                    <img src="images/rmb.png" alt="RMB Nowcast">
+                </div>
+                <h4 data-i18n="projects.rmb.title">RMB CPI Nowcasting</h4>
+                <p data-i18n="projects.rmb.description">Developed models to nowcast South Africa's April CPI using economic indicators.</p>
+                <div class="tech-stack">
+                    <span>LightGBM</span>
+                    <span>Time Series</span>
+                    <span>Feature Engineering</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://zindi.africa/competitions/rmb-monthly-mini-challenge-1-nowcast-april" target="_blank">Competition</a>
+                </div>
+            </div>
+
+            <!-- Biomass Prediction -->
+            <div class="project-card" data-category="cv">
+                <div class="project-image">
+                    <img src="images/biomass-prediction.png" alt="Biomass Prediction">
+                </div>
+                <h4 data-i18n="projects.biomass.title">Biomass Prediction in Cocoa Plantations</h4>
+                <p data-i18n="projects.biomass.description">Fine-tuned LightGBM model for biomass prediction using Sentinel-2 imagery in Côte d'Ivoire.</p>
+                <div class="tech-stack">
+                    <span>LightGBM</span>
+                    <span>Sentinel-2</span>
+                    <span>Python</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://zindi.africa/competitions/africa-biomass-challenge" target="_blank">Competition</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>SQL (MySQL, PostgreSQL)</li>
+                    <li>NoSQL (MongoDB)</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Cloud & Containerization</h3>
+                <ul>
+                    <li>Azure</li>
+                    <li>Docker</li>
+                    <li>Version Control (Git)</li>
+                    <li>Azure DevOps</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>MLOps & Data Engineering</h3>
+                <ul>
+                    <li>MLflow</li>
+                    <li>Kubeflow</li>
+                    <li>Model Deployment</li>
+                    <li>CI/CD Pipelines</li>
+                    <li>Apache Spark</li>
+                    <li>Airflow</li>
+                    <li>ETL Processes</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Collaboration</li>
+                    <li>Leadership</li>
+                    <li>Communication</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+        <h2 data-i18n="activities.title">Activities & Community Involvement</h2>
+        <div class="activities-grid">
+            <div class="activity-card">
+                <i class="fas fa-trophy"></i>
+                <h3>Data Science Competitor</h3>
+                <p>Active competitor on Kaggle and Zindi platforms with multiple gold medals and top rankings</p>
+                <div class="platform-links">
+                    <a href="https://zindi.africa/users/HackP" target="_blank">Zindi Profile</a>
+                </div>
+            </div>
+
+            <div class="activity-card">
+                <i class="fas fa-heart"></i>
+                <h3>Red Crescent Member</h3>
+                <p>Member of the Red Crescent, Hammam Sousse Local Committee</p>
+                <p class="date">2022 — Present</p>
+            </div>
+
+            <div class="activity-card">
+                <i class="fas fa-users"></i>
+                <h3>NATEG Tunisia</h3>
+                <p>External Relations Coordinator</p>
+                <p class="date">2021 — 2022</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <h2 data-i18n="achievements.title">Competition Achievements</h2>
+        <div class="achievements-grid">
+            <!-- Cryptojacking Detection -->
+            <div class="achievement-card gold">
+                <div class="medal"><i class="fas fa-medal"></i></div>
+                <h3 data-i18n="achievements.crypto.title">Cryptojacking Detection Challenge</h3>
+                <p class="rank">Rank 1/328</p>
+                <p class="competition">UmojaHack Africa 2023</p>
+                <p class="description" data-i18n="achievements.crypto.description">Built ML models to identify illegal cryptocurrency mining from website activity patterns</p>
+                <div class="prize">Prize: $2,400 USD</div>
+                <div class="competition-link">
+                    <a href="https://zindi.africa/competitions/umojahack-africa-2023-intermediate-challenge" target="_blank">View Competition</a>
+                </div>
+            </div>
+
+            <!-- Olive Tree Mapping -->
+            <div class="achievement-card gold">
+                <div class="medal"><i class="fas fa-medal"></i></div>
+                <h3 data-i18n="achievements.olive.title">OpenGeoAI 2023 Hack</h3>
+                <p class="rank">Rank 1/62</p>
+                <p class="competition">OpenGeoAI 2023</p>
+                <p class="description" data-i18n="achievements.olive.description">Mapped olive crops using Sentinel-2 imagery time series at parcel level in Central Tunisia</p>
+                <div class="competition-link">
+                    <a href="https://zindi.africa/competitions/opengeoai-2023-hack" target="_blank">View Competition</a>
+                </div>
+            </div>
+
+            <!-- Location Recognition -->
+            <div class="achievement-card gold">
+                <div class="medal"><i class="fas fa-medal"></i></div>
+                <h3 data-i18n="achievements.location.title">GeoAI Challenge: Location Recognition</h3>
+                <p class="rank">Rank 2/28</p>
+                <p class="competition">GeoAI Challenge</p>
+                <p class="description" data-i18n="achievements.location.description">Developed NLP solution to predict microblogging post locations from text content</p>
+                <div class="competition-link">
+                    <a href="https://zindi.africa/competitions/geoai-challege-location-mention-recognition-from-social-media" target="_blank">View Competition</a>
+                </div>
+            </div>
+
+            <!-- DeepFlow AI -->
+            <div class="achievement-card gold">
+                <div class="medal"><i class="fas fa-medal"></i></div>
+                <h3 data-i18n="achievements.deepflow.title">DeepFlow AI HackFlow</h3>
+                <p class="rank">Rank 2/79</p>
+                <p class="competition">DeepFlow AI Hackathon</p>
+                <p class="description" data-i18n="achievements.deepflow.description">Advanced AI solutions for flow optimization challenges</p>
+                <div class="competition-link">
+                    <a href="https://zindi.africa/competitions/deepflow-ai-hackflow" target="_blank">View Competition</a>
+                </div>
+            </div>
+
+            <!-- RMB Nowcast -->
+            <div class="achievement-card silver">
+                <div class="medal"><i class="fas fa-medal"></i></div>
+                <h3 data-i18n="achievements.rmb.title">RMB CPI Nowcasting Challenge</h3>
+                <p class="rank">Rank 4/132</p>
+                <p class="competition">RMB Monthly Mini Challenge</p>
+                <p class="description" data-i18n="achievements.rmb.description">Developed models to nowcast South Africa's April CPI</p>
+                <div class="competition-link">
+                    <a href="https://zindi.africa/competitions/rmb-monthly-mini-challenge-1-nowcast-april" target="_blank">View Competition</a>
+                </div>
+            </div>
+
+            <!-- CO2 Prediction -->
+            <div class="achievement-card">
+                <div class="medal"><i class="fas fa-medal"></i></div>
+                <h3 data-i18n="achievements.co2.title">Carbon Dioxide Prediction Challenge</h3>
+                <p class="rank">Rank 9/441</p>
+                <p class="competition">UmojaHack Africa 2023</p>
+                <p class="description" data-i18n="achievements.co2.description">Predicted carbon output in Africa using CO2 emissions data</p>
+                <div class="competition-link">
+                    <a href="https://zindi.africa/competitions/umojahack-africa-2023-beginner-challenge" target="_blank">View Competition</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 data-i18n="contact.title">Contact</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> malek.sahlia.ai@gmail.com</p>
+                <p><i class="fas fa-phone"></i> (+216) 24170579</p>
+                <p><i class="fas fa-map-marker-alt"></i> Manouba, Tunisia</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Melek-Sahlia" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/melek-sahlia/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://zindi.africa/users/HackP" target="_blank" class="zindi">Zindi</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="certificate-download">
+            <a href="PDFs/Zindi Certificate.pdf" class="certificate-btn" download>
+                <i class="fas fa-certificate"></i> Download Zindi Certificate
+            </a>
+        </div>
+        <p>&copy; 2024 Malek Sahlia. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
